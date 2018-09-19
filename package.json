@@ -1,5 +1,5 @@
 {
-  "name": "social_tv",
+  "name": "sanic-create-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,6 +27,6 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "webpack.config.js",
   "keywords": [],
-  "author": "",
+  "author": "erns",
   "license": "ISC"
 }
