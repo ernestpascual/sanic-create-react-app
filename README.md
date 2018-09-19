@@ -1,18 +1,18 @@
 # Sanic + Create React 
 
-##Step 1: Make a new create-react-app through the create-react-app cli
+## Make a new create-react-app through the create-react-app cli
 ```
 create-react-app <project name>
 ```
 
-##Step 2:  Make sure that npm is installed in correctly then Install webpack and webpack cli 
+## Make sure that npm is installed in correctly then Install webpack and webpack cli 
 ```
 npm init
 npm install  -D
 npm i webpack webpack-cli -D
 ```
 
-##Step 3: Install Babel dependcies
+## Install Babel dependencies
 ```
 npm i babel-core babel-loader babel-preset-env babel-preset-react -D
 ```
@@ -21,13 +21,13 @@ If you ever encounter an error regarding babel core, install the following depen
 ```
  npm install babel-loader@7 -S
 ```
-##Step 4: Make a .babelrc
+## Make a .babelrc
 ```
 {
     "presets": ["env", "react"]
   }
 ```
-##Step 5: Create a webpack.config.js file
+## Create a webpack.config.js file
 ```
 module.exports = {
   module: {
@@ -44,12 +44,12 @@ module.exports = {
 };
 ```
 
-##Step 6: Install html-webpack-plugin dependency
+## Install html-webpack-plugin dependency
 ```
 npm i html-webpack-plugin -D
 ```
 
-##Step 7: Update webpack.config
+## Update webpack.config
 ```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
@@ -74,7 +74,7 @@ module.exports = {
 };
 ```
 
-##Step 8: Setup webpack-dev-server
+## Setup webpack-dev-server
 ```
 npm i webpack-dev-server -D
 ```
@@ -83,7 +83,7 @@ Change the your package.json start script to
 "start": "webpack-dev-server --mode development --open"
 ```
 
-## Step 9: Setup CSS loader for webpack
+## Setup CSS loader for webpack
 Install style loader:
 
 ```
@@ -91,7 +91,7 @@ npm i css-loader style-loader -D
 ```
 
 
-##Step 10: Update your webpack.config:
+## Update your webpack.config:
 
 ```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -138,12 +138,12 @@ run the following command
 pip3 install requirements.txt
 ```
 
-Change your package.json start to:
+## Change your package.json start to:
 ```
 "start": "python3 server.py",
 ```
 
-Make your server.py file
+## Make your server.py file
 
 ```
 from sanic import Sanic
